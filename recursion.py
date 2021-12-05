@@ -2,7 +2,7 @@
 def fibnum(n):
 
     if n == 0:
-        return 0
+        return n
 
     elif n == 1 or n == 2:
         return 1
