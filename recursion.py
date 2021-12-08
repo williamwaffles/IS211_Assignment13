@@ -1,23 +1,31 @@
 
 
 def main():
-    number = int(input("Please Enter integer number: "))
-    print("The 9th element of the Fibonnaci sequence is : {}".format(fibonacci(number)))
+
+    print("Time for some recursion! ")
+    print("Let\'s start with the Fibonnaci sequence...")
+    n = int(input("Please enter an integer: "))
+    print(f"The {n} element of the Fibonnaci sequence is : {fibonnaci(n+1)}")
+
+    print("Let\'s calculate the greatest common divisor!")
+    a = int(input("Please enter an integer: "))
+    b = int(input("Please enter another integer: "))
+    print(f"You've entered {a} and {b}.")
+    print(f"The GCD is {gcd(a, b)} ")
+
+    print("Finally, let\'s compare two strings!")
     s1 = input("Please Enter the first string: ")
     s2 = input("Please Enter the second string: ")
+    print(f"You've entered {s1} and {s2}.")
     print(compareTo(s1,s2))
-    a=int(input("Please Enter the first integer: "))
-    b=int(input("Please Enter the second integer: "))
-    print("The GCD is {} ".format(gcd(a,b)))
+
 
 def fibonnaci(n):
 
     if n == 0:
         return n
-
     elif n == 1 or n == 2:
         return 1
-
     else:
         return (fibonnaci(n - 1) + fibonnaci(n - 2))
 
