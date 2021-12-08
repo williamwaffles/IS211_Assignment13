@@ -5,7 +5,7 @@ def main():
     print("Time for some recursion! ")
     print("Let\'s start with the Fibonnaci sequence...")
     n = int(input("Please enter an integer: "))
-    print(f"The {n} element of the Fibonnaci sequence is : {fibonnaci(n+1)}")
+    print(f"The {n} element of the Fibonnaci sequence is : {fibonnaci(n-1)}")
 
     print("Let\'s calculate the greatest common divisor!")
     a = int(input("Please enter an integer: "))
@@ -23,7 +23,7 @@ def main():
 def fibonnaci(n):
 
     if n == 0:
-        return n
+        return 0
     elif n == 1 or n == 2:
         return 1
     else:
@@ -38,7 +38,7 @@ def gcd(a, b):
 
 def compareTo(s1, s2):
 
-    if len(s1) == 0 and len(s2) == 0:
+    if len(s1) == 0 and len(s2) == 0 or len(s1) == len(s2):
         return 0
     elif len(s1) == 0:
         return -1
